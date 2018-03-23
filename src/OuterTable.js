@@ -7,9 +7,7 @@ class OuterTable extends Component {
   render() {
     return (
       <table className="table table-responsive">
-        <thead>
-          <DaysOfTheWeek />
-        </thead>
+        <DaysOfTheWeek />
         <tbody>
           <Hours hour="8-9" />
           <Hours hour="9-10" />
@@ -31,3 +29,5 @@ class OuterTable extends Component {
     )
   }
 }
+
+export default OuterTable

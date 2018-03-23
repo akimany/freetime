@@ -15,15 +15,18 @@ class DaysOfTheWeek extends Component {
     ]
 
     return daysOfTheWeek.map(elem => {
-      return <th key="{elem.id }">${elem.day}</th>
+      return <th>{elem.day}</th>
     })
   }
   render() {
     const days = this._getDays()
     return (
-      <tr>
-        <th>Hour / Day</th>
-      </tr>
+      <thead>
+        <tr>
+          <th>Hours / Days</th>
+          {days}
+        </tr>
+      </thead>
     )
   }
 }

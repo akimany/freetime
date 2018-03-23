@@ -17,3 +17,5 @@ class Hours extends Component {
     )
   }
 }
+
+export default Hours
